@@ -180,74 +180,100 @@
             </div>
         </section>
 
-        <section class="section position-relative" style="background-image: url(image/bg-orname.jpg);">
-            <div class="r-container">
-                <div class="image-overlay"></div>
-                <div class="d-flex flex-column position-relative" style="z-index: 2;">
-                    <div class="text-center">
-                        <h3 class="font-3 accent-color fw-semibold">DEJANOS UN MENSAJE</h3>
-                        <div class="mb-2 w-100">
-                            <div class="divider accent-color mx-auto">
-                                <i class="fa-solid fa-microphone-alt"></i>
-                            </div>
-                        </div>
-                        <p class="text-gray font-1">Cuentanos el servicio que te gustaria contratar, ciudad y cantidad de espectadores</p>
+<section class="section position-relative" style="background-image: url(image/bg-orname.jpg);">
+    <div class="r-container">
+        <div class="image-overlay"></div>
+        <div class="d-flex flex-column position-relative" style="z-index: 2;">
+            <div class="text-center">
+                <h3 class="font-3 accent-color fw-semibold">DEJANOS UN MENSAJE</h3>
+                <div class="mb-2 w-100">
+                    <div class="divider accent-color mx-auto">
+                        <i class="fa-solid fa-microphone-alt"></i>
                     </div>
-                    <div class="text-start">
-                        <div class="success_msg toast align-items-center w-100 shadow-none border-success mb-3"
-                            role="alert" aria-live="assertive" aria-atomic="true">
-                            <div class="d-flex p-2">
-                                <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center">
-                                    <i class="fa-solid fa-check f-36 text-success"></i>
-                                    ¡Mensaje enviado correctamente!
-                                </div>
-                                <button type="button" class="btn-close me-2 m-auto text-success"
-                                    data-bs-dismiss="toast" aria-label="Close"></button>
-                            </div>
-                        </div>
-                        <div class="error_msg toast align-items-center w-100 shadow-none border-danger mb-3"
-                        role="alert" aria-live="assertive" aria-atomic="true">
-                        <div class="d-flex p-2">
-                            <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center">
-                                <i class="fa-solid fa-triangle-exclamation f-36 text-danger"></i>
-                                Algo ha fallado! Mensaje no enviado.
-                            </div>
-                            <button type="button" class="btn-close me-2 m-auto text-success"
-                                data-bs-dismiss="toast" aria-label="Close"></button>
-                        </div>
-                    </div>
-
-                    <form action="https://formsubmit.co/magogonzalo2@gmail.com" method="POST" class="d-flex-flex-column w-100 needs-validation mb-3" novalidate>
-    
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://magogonzalo.es">
-
-                        <div class="mb-3">
-                            <input type="text" class="form-control p-3" name="Nombre" id="name" required placeholder="Nombre">
-                            <div class="invalid-feedback">
-                                Este campo es requerido.
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control p-3" id="email" name="Email" required placeholder="Email">
-                            <div class="invalid-feedback">
-                                El e-mail ingresado no es valido por favor utilice el siguiente formato:
-                                usuario@example.com.
-                            </div>
-                        </div>
-                        <div class="mb-5">
-                            <textarea class="form-control" id="message" name="Mensaje" rows="5" placeholder="Mensaje"></textarea>
-                        </div>
-                        <div class="mb-3 d-flex justify-content-center">
-                            <button type="submit" class="bg-accent-color secondary-color-hover text-white fw-semibold" style="border: none; padding: 15px 40px;">
-                                Enviar mensaje
-                            </button>
-                        </div>
-                    </form>
                 </div>
+                <p class="text-gray font-1">Cuentanos el servicio que te gustaria contratar, ciudad y cantidad de espectadores</p>
+            </div>
+            <div class="text-start">
+                
+                <div id="msg_success" class="toast align-items-center w-100 shadow-none border-success mb-3" style="display: none; opacity: 1;">
+                    <div class="d-flex p-2">
+                        <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center">
+                            <i class="fa-solid fa-check f-36 text-success"></i>
+                            ¡Mensaje enviado correctamente!
+                        </div>
+                    </div>
+                </div>
+
+                <div id="msg_error" class="toast align-items-center w-100 shadow-none border-danger mb-3" style="display: none; opacity: 1;">
+                    <div class="d-flex p-2">
+                        <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center">
+                            <i class="fa-solid fa-triangle-exclamation f-36 text-danger"></i>
+                            Algo ha fallado. Por favor, inténtalo de nuevo.
+                        </div>
+                    </div>
+                </div>
+
+                <form id="miFormulario" class="d-flex flex-column w-100 needs-validation mb-3" novalidate>
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="mb-3">
+                        <input type="text" class="form-control p-3" name="name" required placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control p-3" name="email" required placeholder="Email">
+                    </div>
+                    <div class="mb-5">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center">
+                        <button type="submit" id="botonEnviar" class="bg-accent-color secondary-color-hover text-white fw-semibold" style="border: none; padding: 15px 40px;">
+                            Enviar mensaje
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+
+    <script>
+        const formulario = document.getElementById('miFormulario');
+        const btn = document.getElementById('botonEnviar');
+        const exito = document.getElementById('msg_success');
+        const errorMsg = document.getElementById('msg_error');
+
+        formulario.addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita que la página se recargue o se vaya a otra web
+            
+            btn.innerText = 'Enviando...';
+            btn.disabled = true;
+
+            const formData = new FormData(formulario);
+
+            fetch('https://formsubmit.co/ajax/magogonzalo2@gmail.com', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    formulario.style.display = 'none'; // Escondemos el formulario
+                    exito.style.display = 'block';     // Mostramos el cartel de éxito
+                } else {
+                    errorMsg.style.display = 'block';  // Mostramos error si algo falla
+                    btn.innerText = 'Enviar mensaje';
+                    btn.disabled = false;
+                }
+            })
+            .catch(err => {
+                errorMsg.style.display = 'block';
+                btn.innerText = 'Enviar mensaje';
+                btn.disabled = false;
+            });
+        });
+    </script>
+</section>
                             </button>
                         </div>
                     </form>
