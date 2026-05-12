@@ -217,14 +217,21 @@
                     <input type="hidden" name="_captcha" value="false">
                     
                     <div class="mb-3">
-                        <input type="text" class="form-control p-3" name="name" required placeholder="Nombre">
+                        <input type="text" class="form-control p-3" name="Nombre" required placeholder="Nombre">
                     </div>
+                    
                     <div class="mb-3">
-                        <input type="email" class="form-control p-3" name="email" required placeholder="Email">
+                        <input type="email" class="form-control p-3" name="Email" required placeholder="Email">
                     </div>
+
+                    <div class="mb-3">
+                        <input type="tel" class="form-control p-3" name="Telefono" placeholder="Teléfono de contacto (opcional)">
+                    </div>
+
                     <div class="mb-5">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                        <textarea class="form-control" name="Mensaje" rows="5" placeholder="Mensaje" required></textarea>
                     </div>
+                    
                     <div class="mb-3 d-flex justify-content-center">
                         <button type="submit" id="botonEnviar" class="bg-accent-color secondary-color-hover text-white fw-semibold" style="border: none; padding: 15px 40px;">
                             Enviar mensaje
@@ -242,7 +249,7 @@
         const errorMsg = document.getElementById('msg_error');
 
         formulario.addEventListener('submit', function(e) {
-            e.preventDefault(); // Evita que la página se recargue o se vaya a otra web
+            e.preventDefault();
             
             btn.innerText = 'Enviando...';
             btn.disabled = true;
@@ -258,10 +265,10 @@
             })
             .then(response => {
                 if (response.ok) {
-                    formulario.style.display = 'none'; // Escondemos el formulario
-                    exito.style.display = 'block';     // Mostramos el cartel de éxito
+                    formulario.style.display = 'none';
+                    exito.style.display = 'block';
                 } else {
-                    errorMsg.style.display = 'block';  // Mostramos error si algo falla
+                    errorMsg.style.display = 'block';
                     btn.innerText = 'Enviar mensaje';
                     btn.disabled = false;
                 }
@@ -274,12 +281,6 @@
         });
     </script>
 </section>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
     </main>
 
 <footer>
