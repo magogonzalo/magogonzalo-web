@@ -216,33 +216,38 @@
                                 data-bs-dismiss="toast" aria-label="Close"></button>
                         </div>
                     </div>
+
                     <form action="https://formsubmit.co/magogonzalo2@gmail.com" method="POST" class="d-flex-flex-column w-100 needs-validation mb-3" novalidate>
     
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://magogonzalo.es">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://magogonzalo.es">
 
-    <div class="mb-3">
-        <input type="text" class="form-control p-3" name="name" id="name" required placeholder="Nombre">
-        <div class="invalid-feedback">
-            Este campo es requerido.
+                        <div class="mb-3">
+                            <input type="text" class="form-control p-3" name="Nombre" id="name" required placeholder="Nombre">
+                            <div class="invalid-feedback">
+                                Este campo es requerido.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control p-3" id="email" name="Email" required placeholder="Email">
+                            <div class="invalid-feedback">
+                                El e-mail ingresado no es valido por favor utilice el siguiente formato:
+                                usuario@example.com.
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <textarea class="form-control" id="message" name="Mensaje" rows="5" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-center">
+                            <button type="submit" class="bg-accent-color secondary-color-hover text-white fw-semibold" style="border: none; padding: 15px 40px;">
+                                Enviar mensaje
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="mb-3">
-        <input type="email" class="form-control p-3" id="email" name="email" required placeholder="Email">
-        <div class="invalid-feedback">
-            El e-mail ingresado no es valido por favor utilice el siguiente formato:
-            usuario@example.com.
-        </div>
-    </div>
-    <div class="mb-5">
-        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Mensaje"></textarea>
-    </div>
-    <div class="mb-3 d-flex justify-content-center">
-        <button type="submit" class="bg-accent-color secondary-color-hover text-white submit_form fw-semibold">
-            Enviar mensaje
-        </button>
-    </div>
-</form>
+    </section>
                             </button>
                         </div>
                     </form>
