@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://magogonzalo.es/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://magogonzalo.es/index.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://magogonzalo.es/about_me.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://magogonzalo.es/about_club.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://magogonzalo.es/contact.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://magogonzalo.es/gallery.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://magogonzalo.es/performance.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://magogonzalo.es/schedule_2.html</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://magogonzalo.es/index_2.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://magogonzalo.es/index_3.html</loc>
+    <priority>0.50</priority>
+  </url>
+
+</urlset>
