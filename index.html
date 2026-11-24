@@ -1,15 +1,59 @@
 <!DOCTYPE html>
-<html lang="es"> 
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Básico -->
-    <title>Mago Gonzalo | Magia, Humor y Showman en Almería y Roquetas</title>
-    <meta name="description" content="¿Buscas un mago en Almería? Mago Gonzalo ofrece espectáculos de magia, humor, stand-up y ventriloquía para comuniones, bodas y eventos corporativos. ¡Reserva tu show hoy!">
-    <meta name="keywords" content="mago almeria, mago para comuniones almeria, espectaculos de magia almeria, mago roquetas de mar, animacion eventos almeria">
-    <link rel="canonical" href="https://magogonzalo.es">
+
+    <!-- SEO básico -->
+    <title>Mago en Roquetas de Mar y Almería | Mago Gonzalo</title>
+    <meta name="description" content="Mago en Roquetas de Mar y toda Almería: magia, humor y ventriloquía para comuniones, cumpleaños, bodas, hoteles y empresas. Shows en español e inglés. Pide presupuesto.">
+    <link rel="canonical" href="https://magogonzalo.es/">
+
+    <!-- Redes sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="Mago en Roquetas de Mar y Almería | Mago Gonzalo">
+    <meta property="og:description" content="Magia, humor y ventriloquía para comuniones, bodas, hoteles y eventos de empresa en Roquetas de Mar y Almería.">
+    <meta property="og:url" content="https://magogonzalo.es/">
+    <meta property="og:image" content="https://magogonzalo.es/image/home.webp">
+
+    <!-- Datos estructurados: negocio local -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["EntertainmentBusiness", "LocalBusiness"],
+      "@id": "https://magogonzalo.es/#negocio",
+      "name": "Mago Gonzalo",
+      "description": "Mago, ventrílocuo y showman en Roquetas de Mar y Almería. Espectáculos de magia y humor para comuniones, cumpleaños, bodas, hoteles, colegios y eventos de empresa, en español e inglés.",
+      "url": "https://magogonzalo.es/",
+      "image": "https://magogonzalo.es/image/home.webp",
+      "logo": "https://magogonzalo.es/image/logo.webp",
+      "telephone": "+34641064198",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Roquetas de Mar",
+        "addressRegion": "Almería",
+        "addressCountry": "ES"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Roquetas de Mar" },
+        { "@type": "City", "name": "Almería" },
+        { "@type": "City", "name": "El Ejido" },
+        { "@type": "AdministrativeArea", "name": "Provincia de Almería" }
+      ],
+      "knowsLanguage": ["es", "en"],
+      "founder": { "@type": "Person", "name": "Gonzalo Paletta" },
+      "sameAs": [
+        "https://facebook.com/elmagogonzalo",
+        "https://instagram.com/elmagogonzalo",
+        "https://www.youtube.com/@magogonzalo7433"
+      ]
+    }
+    </script>
+
+    <!-- La imagen principal se descarga cuanto antes -->
+    <link rel="preload" as="image" href="image/home.webp" fetchpriority="high">
 
     <!-- Stylesheet -->
     <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
@@ -24,28 +68,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+    <!-- Scripts: ya no bloquean la carga (mismo orden que antes) -->
+    <script src="js/vendor/bootstrap.bundle.min.js" defer></script>
+    <script src="js/vendor/jquery.min.js" defer></script>
+    <script src="js/vendor/swiper-bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/video_embedded.js" defer></script>
 </head>
 
 <body>
-    <script src="js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/video_embedded.js"></script>
-
     <!-- Header -->
     <header class="sticky-top bg-secondary-dark">
         <div class="r-container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <div class="logo-container">
-                        <!-- Optimización: Alt de logo -->
-                        <img src="image/logo.png" alt="Mago Gonzalo Almería Logo" class="img-fluid">
+                        <img src="image/logo.webp" alt="Mago Gonzalo, mago en Roquetas de Mar y Almería" class="img-fluid">
                     </div>
 
                     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                        aria-expanded="false" aria-label="Abrir menú">
                         <i class="fa-solid fa-bars accent-color"></i>
                     </button>
 
@@ -74,22 +118,22 @@
 
                         <div class="d-flex flex-row gap-4 p-3">
                             <div class="d-flex justify-content-center align-items-center">
-                                <a href="https://wa.me/34641064198?text=Hola%20queria%20consultar%20para%20un%20show" target="_blank" class="accent-color social-icon white-text-hover" aria-label="Whatsapp">
+                                <a href="https://wa.me/34641064198?text=Hola%20queria%20consultar%20para%20un%20show" target="_blank" rel="noopener" class="accent-color social-icon white-text-hover" aria-label="WhatsApp">
                                     <i class="fa-brands fa-whatsapp"></i>
                                 </a>
                             </div>
                             <div class="d-flex justify-content-center align-items-center">
-                                <a href="https://facebook.com/elmagogonzalo" target="_blank" class="accent-color social-icon white-text-hover" aria-label="Facebook">
+                                <a href="https://facebook.com/elmagogonzalo" target="_blank" rel="noopener" class="accent-color social-icon white-text-hover" aria-label="Facebook">
                                     <i class="fa-brands fa-facebook"></i>
                                 </a>
                             </div>
                             <div class="d-flex justify-content-center align-items-center">
-                                <a href="https://instagram.com/elmagogonzalo" target="_blank" class="accent-color social-icon white-text-hover" aria-label="Instagram">
+                                <a href="https://instagram.com/elmagogonzalo" target="_blank" rel="noopener" class="accent-color social-icon white-text-hover" aria-label="Instagram">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </div>
                             <div class="d-flex justify-content-center align-items-center">
-                                <a href="https://www.youtube.com/@magogonzalo7433/videos" target="_blank" class="accent-color social-icon white-text-hover" aria-label="YouTube">
+                                <a href="https://www.youtube.com/@magogonzalo7433/videos" target="_blank" rel="noopener" class="accent-color social-icon white-text-hover" aria-label="YouTube">
                                     <i class="fa-brands fa-youtube"></i>
                                 </a>
                             </div>
@@ -101,27 +145,26 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="section image-infinite-bg position-relative" style="background-size: cover; background-position: center ;padding: 15em 1em 15em 1em;" data-images='["image/home.png", "image/home.png", "image/home.png"]'>
+        <!-- Hero: el fondo ya viene en el HTML, sin esperar al JavaScript -->
+        <section class="section image-infinite-bg position-relative" style="background-image: url('image/home.webp'); background-size: cover; background-position: center; padding: 15em 1em 15em 1em;" data-images='["image/home.webp"]'>
             <div class="r-container d-flex">
                 <div class="image-overlay"></div>
                 <div class="d-flex flex-column justify-content-center align-items-center text-center gap-3 w-100 h-100 mx-auto" style="max-width: 768px; z-index: 2;">
-                    <!-- Optimización: H1 es el más importante para Google -->
-                    <h1 class="accent-color fst-italic font-2 h5">Mago Gonzalo: Magia y Humor en Almería</h1>
-                    <h2 class="text-white font-3">Showman para Eventos y Celebraciones</h2>
+                    <h1 class="accent-color fst-italic font-2 h4">Mago en Roquetas de Mar y Almería: magia y humor para tu evento</h1>
+                    <h2 class="text-white font-3">Mago Gonzalo, showman para celebraciones</h2>
                     <div class="mb-2 w-100">
                         <div class="divider accent-color mx-auto">
                             <i class="fa-solid fa-microphone-alt"></i>
                         </div>
                     </div>
-                    <p class="font-1 text-white">Espectáculos de Magia de Cerca, Ventriloquía y Stand-up Comedy. Diversión garantizada para tu boda, comunión o evento de empresa en Almería.</p>
+                    <p class="font-1 text-white">Magia de cerca, ventriloquía y comedia para comuniones, cumpleaños, bodas, hoteles y eventos de empresa en Roquetas de Mar, El Ejido y toda la provincia de Almería.</p>
                     <div class="w-100">
                         <div class="d-flex flex-wrap flex-md-row gap-3 justify-content-center">
-                            <a type="button" href="schedule_2.html" class="bg-accent-color secondary-color-hover d-flex flex-row gap-3 text-white align-items-center">
-                                <span>Próximas Fechas</span>
+                            <a href="contact.html" class="bg-accent-color secondary-color-hover d-flex flex-row gap-3 text-white align-items-center">
+                                <span>Pedir presupuesto</span>
                                 <i class="fa-solid fa-long-arrow-alt-right"></i>
                             </a>
-                            <a type="button" href="performance.html" class="bg-secondary-dark accent-color-hover d-flex flex-row-reverse gap-3 text-white align-items-center">
+                            <a href="performance.html" class="bg-secondary-dark accent-color-hover d-flex flex-row-reverse gap-3 text-white align-items-center">
                                 <span>Ver videos</span>
                                 <i class="fa-solid fa-play-circle"></i>
                             </a>
@@ -131,8 +174,26 @@
             </div>
         </section>
 
+        <!-- Texto de portada: lo que Google necesita leer -->
+        <section class="section position-relative bg-secondary-dark">
+            <div class="r-container">
+                <div class="container" style="max-width: 900px;">
+                    <h3 class="font-3 accent-color fw-semibold text-center">Tu mago en Roquetas de Mar</h3>
+                    <div class="mb-3 w-100">
+                        <div class="divider accent-color mx-auto">
+                            <i class="fa-solid fa-microphone-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray font-1">Soy Gonzalo, mago profesional con más de 20 años de experiencia, especializado en espectáculos familiares. Vivo en Roquetas de Mar y actúo en toda la provincia de Almería: fiestas de cumpleaños, comuniones, bodas, hoteles, colegios y cenas de empresa.</p>
+                    <p class="text-gray font-1">Mi show mezcla magia de cerca, humor, ventriloquía y participación del público, para que se rían tanto los niños como los adultos. Puedo hacerlo en español o en inglés, algo muy útil en hoteles con público internacional.</p>
+                    <p class="text-gray font-1">He actuado en cadenas hoteleras de la costa almeriense, en colegios y en eventos solidarios, y adapto cada espectáculo a la edad del público, la duración y el espacio disponible.</p>
+                    <p class="text-gray font-1">Cuéntame fecha, lugar y tipo de evento por <a href="https://wa.me/34641064198?text=Hola%20queria%20consultar%20para%20un%20show" target="_blank" rel="noopener" class="accent-color">WhatsApp</a> o desde la página de <a href="contact.html" class="accent-color">contacto</a> y te preparo un presupuesto sin compromiso.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Services Section -->
-        <section class="section position-relative" style="background-image: url(image/bg-orname.jpg);">
+        <section class="section position-relative" style="background-image: url(image/bg-orname.webp);">
             <div class="r-container">
                 <div class="image-overlay"></div>
                 <div class="d-flex flex-column justify-content-center text-center position-relative gap-3" style="z-index: 2;">
@@ -142,10 +203,10 @@
                             <i class="fa-solid fa-microphone-alt"></i>
                         </div>
                     </div>
-                    <p class="text-gray font-1">Contrata el mejor show de magia en Roquetas de Mar y Almería.</p>
+                    <p class="text-gray font-1">Contrata un show de magia en Roquetas de Mar y Almería.</p>
                     <div class="d-flex flex-column">
                         <div class="container">
-                            <img src="image/8.png" alt="Mago Gonzalo actuando en directo" class="img-fluid shadow">
+                            <img src="image/8.webp" alt="Mago Gonzalo actuando en directo" class="img-fluid shadow" loading="lazy" decoding="async">
                         </div>
                         <div class="row row-cols-1 row-cols-md-3" style="margin-top: -60px;">
                             <div class="col">
@@ -153,8 +214,8 @@
                                     <div class="d-flex justify-content-center align-items-center bg-accent-color text-white icon-box mx-auto">
                                         <i class="fa-solid fa-coffee"></i>
                                     </div>
-                                    <h5 class="fw-semibold font-3 text-white">Eventos Empresariales</h5>
-                                    <p class="text-gray font-1">Magia corporativa para cenas de empresa y presentaciones de producto en Almería.</p>
+                                    <h4 class="fw-semibold font-3 text-white h5">Eventos empresariales</h4>
+                                    <p class="text-gray font-1">Magia corporativa para cenas de empresa, fiestas de Navidad y presentaciones de producto en Almería.</p>
                                 </div>
                             </div>
                             <div class="col">
@@ -162,8 +223,8 @@
                                     <div class="d-flex justify-content-center align-items-center bg-accent-color text-white icon-box mx-auto">
                                         <i class="fa-solid fa-microphone-alt"></i>
                                     </div>
-                                    <h5 class="fw-semibold font-3 text-white">Stand-up & Humor</h5>
-                                    <p class="text-gray font-1">Showman y cómico para salas, teatros y fiestas privadas con humor inteligente.</p>
+                                    <h4 class="fw-semibold font-3 text-white h5">Stand-up y humor</h4>
+                                    <p class="text-gray font-1">Showman y cómico para salas, teatros, hoteles y fiestas privadas con humor inteligente.</p>
                                 </div>
                             </div>
                             <div class="col">
@@ -171,8 +232,8 @@
                                     <div class="d-flex justify-content-center align-items-center bg-accent-color text-white icon-box mx-auto">
                                         <i class="fa-solid fa-music"></i>
                                     </div>
-                                    <h5 class="fw-semibold font-3 text-white">Comuniones y Bodas</h5>
-                                    <p class="text-gray font-1">El mago para comuniones favorito en Almería. Diversión para niños y adultos.</p>
+                                    <h4 class="fw-semibold font-3 text-white h5">Comuniones, cumpleaños y bodas</h4>
+                                    <p class="text-gray font-1">Mago para comuniones y cumpleaños en Roquetas de Mar y Almería. Diversión para niños y adultos.</p>
                                 </div>
                             </div>
                         </div>
@@ -181,7 +242,29 @@
             </div>
         </section>
 
-        <!-- Gallery Section (Optimized with Alt texts) -->
+        <!-- Preguntas frecuentes (texto visible) -->
+        <section class="section bg-secondary-dark">
+            <div class="r-container">
+                <div class="container" style="max-width: 900px;">
+                    <h3 class="font-3 accent-color fw-semibold text-center">Preguntas frecuentes</h3>
+                    <div class="mb-3 w-100">
+                        <div class="divider accent-color mx-auto">
+                            <i class="fa-solid fa-microphone-alt"></i>
+                        </div>
+                    </div>
+                    <h4 class="text-white font-3 h5">¿En qué zonas actúas?</h4>
+                    <p class="text-gray font-1">En Roquetas de Mar, El Ejido, Almería capital y el resto de la provincia. Para otras localidades, consúltame.</p>
+                    <h4 class="text-white font-3 h5">¿Qué tipos de evento cubres?</h4>
+                    <p class="text-gray font-1">Comuniones, cumpleaños infantiles, bodas, hoteles, colegios, fiestas de empresa y eventos solidarios.</p>
+                    <h4 class="text-white font-3 h5">¿Haces el show en inglés?</h4>
+                    <p class="text-gray font-1">Sí, actúo en español y en inglés.</p>
+                    <h4 class="text-white font-3 h5">¿Cómo pido presupuesto?</h4>
+                    <p class="text-gray font-1">Por WhatsApp o desde la página de contacto, indicando fecha, lugar, tipo de evento y número aproximado de asistentes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
         <section class="position-relative">
             <div class="r-container section border-bottom">
                 <div class="image-overlay"></div>
@@ -193,15 +276,15 @@
                         </div>
                     </div>
                     <div class="row row-cols-1 row-cols-md-3">
-                        <div class="col my-3"><img src="image/1.png" alt="Mago Gonzalo show de magia de cerca" class="img-fluid"></div>
-                        <div class="col my-3"><img src="image/2.png" alt="Espectáculo de ventriloquía Almería" class="img-fluid"></div>
-                        <div class="col my-3"><img src="image/IMG12.jpg" alt="Mago para niños en Almería" class="img-fluid"></div>
-                        <div class="col my-3"><img src="image/4.png" alt="Show de magia y humor para eventos" class="img-fluid"></div>
-                        <div class="col my-3"><img src="image/IMG14.jpg" alt="Cómico stand-up Mago Gonzalo" class="img-fluid"></div>
-                        <div class="col my-3"><img src="image/6.png" alt="Trucos de magia para bodas" class="img-fluid"></div>
-                        <div class="col my-3"><img src="image/7.png" alt="Mago profesional en Almería" class="img-fluid"></div>
-                        <div class="col my-3"><img src="image/8.png" alt="Animación para fiestas infantiles" class="img-fluid"></div>
-                        <div class="col my-3"><img src="image/9.png" alt="Actuación de magia en Roquetas de Mar" class="img-fluid"></div>
+                        <div class="col my-3"><img src="image/1.webp" alt="Mago Gonzalo en un show de magia de cerca" class="img-fluid" loading="lazy" decoding="async"></div>
+                        <div class="col my-3"><img src="image/2.webp" alt="Espectáculo de ventriloquía de Mago Gonzalo en Almería" class="img-fluid" loading="lazy" decoding="async"></div>
+                        <div class="col my-3"><img src="image/IMG12.webp" alt="Mago para niños en una fiesta en Almería" class="img-fluid" loading="lazy" decoding="async"></div>
+                        <div class="col my-3"><img src="image/4.webp" alt="Show de magia y humor para eventos" class="img-fluid" loading="lazy" decoding="async"></div>
+                        <div class="col my-3"><img src="image/IMG14.webp" alt="Mago Gonzalo en un monólogo de stand-up" class="img-fluid" loading="lazy" decoding="async"></div>
+                        <div class="col my-3"><img src="image/6.webp" alt="Magia para bodas con Mago Gonzalo" class="img-fluid" loading="lazy" decoding="async"></div>
+                        <div class="col my-3"><img src="image/7.webp" alt="Mago profesional actuando en Almería" class="img-fluid" loading="lazy" decoding="async"></div>
+                        <div class="col my-3"><img src="image/8.webp" alt="Animación infantil con magia en una fiesta" class="img-fluid" loading="lazy" decoding="async"></div>
+                        <div class="col my-3"><img src="image/9.webp" alt="Actuación de magia en Roquetas de Mar" class="img-fluid" loading="lazy" decoding="async"></div>
                     </div>
                 </div>
             </div>
@@ -216,22 +299,21 @@
                     <div class="row row-cols-1 row-cols-md-3 px-3">
                         <div class="col col-md-5 mb-3">
                             <div class="logo-container mb-3">
-                                <img src="image/logo.png" alt="Mago Gonzalo Almería" class="img-fluid">
+                                <img src="image/logo.webp" alt="Mago Gonzalo" class="img-fluid" loading="lazy">
                             </div>
-                            <p class="text-gray font-1 mb-3">Mago Gonzalo: Ilusionismo, humor y entretenimiento profesional para toda la provincia de Almería.</p>
-                            <!-- Social links... (se mantienen igual pero con aria-labels) -->
+                            <p class="text-gray font-1 mb-3">Mago Gonzalo: magia, humor y ventriloquía para eventos en Roquetas de Mar y toda la provincia de Almería.</p>
                         </div>
 
                         <div class="col col-md-5 mb-5">
                             <div class="d-flex flex-column gap-3">
-                                <h5 class="text-white font-3">¿Dónde contratar un mago en Almería?</h5>
+                                <h5 class="text-white font-3">Contrata un mago en Roquetas de Mar</h5>
                                 <div class="d-flex flex-row gap-3 align-items-center">
                                     <i class="fa-solid fa-map-marker-alt accent-color"></i>
-                                    <span class="text-gray font-1">Almería - Roquetas de Mar - El Ejido</span>
+                                    <span class="text-gray font-1">Roquetas de Mar - Almería - El Ejido</span>
                                 </div>
                                 <div class="d-flex flex-row gap-3 align-items-center">
                                     <i class="fa-solid fa-phone accent-color"></i>
-                                    <span class="text-gray font-1">+34 641 064 198</span>
+                                    <a href="tel:+34641064198" class="text-gray font-1 text-decoration-none">+34 641 064 198</a>
                                 </div>
                                 <div class="d-flex flex-row gap-3 align-items-center">
                                     <i class="fa-solid fa-envelope accent-color"></i>
@@ -242,10 +324,10 @@
 
                         <div class="col col-md-2">
                             <div class="d-flex flex-column gap-3">
-                                <h5 class="text-white font-3">Enlaces Rápidos</h5>
+                                <h5 class="text-white font-3">Enlaces rápidos</h5>
                                 <a href="index.html" class="text-gray">Inicio</a>
-                                <a href="about_me.html" class="text-gray">Sobre Mí</a>
-                                <a href="performance.html" class="text-gray">Shows de Magia</a>
+                                <a href="about_me.html" class="text-gray">Sobre mí</a>
+                                <a href="performance.html" class="text-gray">Shows de magia</a>
                                 <a href="contact.html" class="text-gray">Contacto</a>
                             </div>
                         </div>
@@ -254,11 +336,10 @@
             </div>
             <div class="r-container">
                 <div class="container py-4">
-                    <span class="text-gray font-1">© 2026 Mago Gonzalo. El mejor mago en Almería para tu evento.</span>
+                    <span class="text-gray font-1">© 2026 Mago Gonzalo. Mago en Roquetas de Mar y Almería.</span>
                 </div>
             </div>
         </section>
     </footer>
 </body>
 </html>
-
