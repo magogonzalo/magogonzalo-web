@@ -64,9 +64,11 @@
     <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/vendor/fontawesome.css">
     <link rel="stylesheet" href="css/vendor/brands.css">
-    <link rel="stylesheet" href="css/vendor/regular.css">
+    <link rel="stylesheet" href="css/vendor/regular.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/vendor/regular.css"></noscript>
     <link rel="stylesheet" href="css/vendor/solid.css">
-    <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/vendor/swiper-bundle.min.css"></noscript>
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Google Font -->
@@ -89,6 +91,7 @@
             font-weight: 600;
             transition: transform .2s ease, box-shadow .2s ease;
         }
+        p a.accent-color { text-decoration: underline; text-underline-offset: 3px; }
         .hero-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 16px rgba(0, 0, 0, .35);
@@ -384,7 +387,7 @@
 
                         <div class="col col-md-5 mb-5">
                             <div class="d-flex flex-column gap-3">
-                                <h5 class="text-white font-3">Contrata un mago en Roquetas de Mar</h5>
+                                <h4 class="text-white font-3 h5">Contrata un mago en Roquetas de Mar</h4>
                                 <div class="d-flex flex-row gap-3 align-items-center">
                                     <i class="fa-solid fa-map-marker-alt accent-color"></i>
                                     <span class="text-gray font-1">Roquetas de Mar - Almería - El Ejido</span>
@@ -402,7 +405,7 @@
 
                         <div class="col col-md-2">
                             <div class="d-flex flex-column gap-3">
-                                <h5 class="text-white font-3">Enlaces rápidos</h5>
+                                <h4 class="text-white font-3 h5">Enlaces rápidos</h4>
                                 <a href="index.html" class="text-gray">Inicio</a>
                                 <a href="about_me.html" class="text-gray">Sobre mí</a>
                                 <a href="performance.html" class="text-gray">Shows de magia</a>
