@@ -75,6 +75,20 @@
     <script src="js/vendor/swiper-bundle.min.js" defer></script>
     <script src="js/script.js" defer></script>
     <script src="js/video_embedded.js" defer></script>
+    <!-- Botones del hero redondeados -->
+    <style>
+        .hero-btn {
+            border-radius: 50px !important;
+            padding: 0.85rem 1.8rem !important;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+        .hero-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, .35);
+        }
+    </style>
 </head>
 
 <body>
@@ -160,11 +174,11 @@
                     <p class="font-1 text-white">Magia de cerca, ventriloquía y comedia para comuniones, cumpleaños, bodas, hoteles y eventos de empresa en Roquetas de Mar, El Ejido y toda la provincia de Almería.</p>
                     <div class="w-100">
                         <div class="d-flex flex-wrap flex-md-row gap-3 justify-content-center">
-                            <a href="contact.html" class="bg-accent-color secondary-color-hover d-flex flex-row gap-3 text-white align-items-center">
+                            <a href="contact.html" class="hero-btn bg-accent-color secondary-color-hover d-flex flex-row gap-3 text-white align-items-center">
                                 <span>Pedir presupuesto</span>
                                 <i class="fa-solid fa-long-arrow-alt-right"></i>
                             </a>
-                            <a href="performance.html" class="bg-secondary-dark accent-color-hover d-flex flex-row-reverse gap-3 text-white align-items-center">
+                            <a href="performance.html" class="hero-btn bg-secondary-dark accent-color-hover d-flex flex-row-reverse gap-3 text-white align-items-center">
                                 <span>Ver videos</span>
                                 <i class="fa-solid fa-play-circle"></i>
                             </a>
