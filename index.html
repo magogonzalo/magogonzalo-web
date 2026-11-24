@@ -10,6 +10,11 @@
     <meta name="description" content="Mago en Roquetas de Mar y toda Almería: magia, humor y ventriloquía para comuniones, cumpleaños, bodas, hoteles y empresas. Shows en español e inglés. Pide presupuesto.">
     <link rel="canonical" href="https://magogonzalo.es/">
 
+    <!-- Icono del sitio (favicon) -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
     <!-- Redes sociales -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_ES">
@@ -88,6 +93,16 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 16px rgba(0, 0, 0, .35);
         }
+        .resena {
+            background: rgba(255, 255, 255, .05);
+            border: 1px solid rgba(255, 255, 255, .12);
+            border-radius: 16px;
+            padding: 1.5rem;
+            height: 100%;
+            text-align: left;
+        }
+        .resena .estrellas { color: #fbbc04; letter-spacing: 2px; margin-bottom: .5rem; }
+        .resena footer { margin-top: 1rem; font-weight: 700; color: #fff; }
     </style>
 </head>
 
@@ -251,6 +266,55 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reseñas de Google -->
+        <section class="section bg-secondary-dark" id="resenas">
+            <div class="r-container">
+                <div class="container" style="max-width: 1000px;">
+                    <h3 class="font-3 accent-color fw-semibold text-center">Lo que dicen mis clientes</h3>
+                    <div class="mb-3 w-100">
+                        <div class="divider accent-color mx-auto">
+                            <i class="fa-solid fa-microphone-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-center text-white font-1 mb-4">
+                        <span style="color:#fbbc04; letter-spacing:2px;" aria-hidden="true">★★★★★</span>
+                        <strong>4,9</strong> de valoración en Google · 624 reseñas
+                    </p>
+
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <blockquote class="resena m-0">
+                                <div class="estrellas" aria-label="5 estrellas">★★★★★</div>
+                                <p class="text-gray font-1 mb-0">Hemos visto su show en el hotel playalinda (roquetas de mar) y no habia visto tantas carcajadas en las actuaciones de toda la semana. Ha sido simpatiquisimo, dinamico y, sobre todo, dicertido. Con bromas para peques y adultos y una soltura wue solo los que tienen carisma poseen. Ojala coincidamos en otro lugar. Nos quedamos con ganas de mas.</p>
+                                <footer>joni. bl <span class="text-gray fw-normal">· vía Google</span></footer>
+                            </blockquote>
+                        </div>
+                        <div class="col">
+                            <blockquote class="resena m-0">
+                                <div class="estrellas" aria-label="5 estrellas">★★★★★</div>
+                                <p class="text-gray font-1 mb-0">Ayer pudimos disfrutar de la actuación de este maravilloso mago en el hotel Playasol de Roquetas de Mar, hacía tiempo que no me reía así, maravillosa puesta en escena, muchas risas, magia y encanto para disfrutar en familia y con amigos. Un placer haber compartido este momento tan bueno y lleno de buenas energías! Muchas gracias Gonzalo! Eres mágico!! Mi compañero de vida David te AMA, jajajaja.</p>
+                                <footer>Laura M. D. <span class="text-gray fw-normal">· vía Google</span></footer>
+                            </blockquote>
+                        </div>
+                        <div class="col">
+                            <blockquote class="resena m-0">
+                                <div class="estrellas" aria-label="5 estrellas">★★★★★</div>
+                                <p class="text-gray font-1 mb-0">Estupenda actuación, llena de entusiasmo y gracia. Es un gran profesional tanto como mago, cómico y ventrílocuo. La diversión está asegurada, no se lo pierdan! Lo hemos disfrutado en el hotel Senator Playadulce, de Roquetas.</p>
+                                <footer>Maria Rosario G H <span class="text-gray fw-normal">· vía Google</span></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <a href="https://www.google.com/search?q=Mago+Gonzalo+Roquetas+de+Mar+rese%C3%B1as" target="_blank" rel="noopener" class="hero-btn bg-accent-color secondary-color-hover d-inline-flex gap-3 text-white align-items-center">
+                            <span>Ver las 624 reseñas en Google</span>
+                            <i class="fa-brands fa-google"></i>
+                        </a>
                     </div>
                 </div>
             </div>
